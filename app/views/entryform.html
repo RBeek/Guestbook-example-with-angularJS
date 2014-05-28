@@ -1,0 +1,69 @@
+<div class="header">
+    <ul class="nav nav-pills pull-right" style="margin-right:380px;">
+        <li>
+            <a href="#">
+                <span ng-model="guestbookcounter" class="badge pull-right">{{guestbookcounter}}</span>
+                Terug naar gastenboek
+            </a>
+        </li>
+    </ul>
+    <h3 class="text-muted">NokNok</h3>
+
+</div>
+
+<div class="row">
+    <div class="col-sm-8">
+
+        <h4 class="mgtz">Teken het Gastenboek</h4>
+        <form name="form" ng-submit="addToGuestbook()">
+
+            <div class="form-group float-label-control">
+                <label for="">Naam</label>
+                <input ng-model="guestbook.name" ng-minlength="2" ng-maxlength="20" type="text" name="name" class="form-control" placeholder="Naam" ng-pattern="/^[a-zA-Z]+$/" required>
+                <div style="position: absolute;" ng-show="form.name.$dirty && form.name.$error.pattern">
+                    Vul een geldige naam in
+                </div>
+                <div style="position: absolute;" ng-show="form.name.$error.minlength">
+                    De naam moet tenminste 2 karakters lang zijn
+                </div>
+                <div style="position: absolute;" ng-show="form.name.$error.maxlength">
+                    De naam mag maximaal uit 20 karakters bestaan
+                </div>
+            </div>
+
+            <div class="form-group float-label-control">
+                <label for="">Email</label>
+                <input ng-model="guestbook.email" required type="email" name="email" class="form-control" placeholder="Wat is je email adres?">
+                <div style="position: absolute;" ng-show="form.email.$error.email">
+                    Vul een geldig email adres in
+                </div>
+            </div>
+
+            <div class="form-group float-label-control">
+                <label for="">Commentaar</label>
+                <textarea ng-model="guestbook.comment" required class="form-control" name="comment" placeholder="Schrijf een klein bericht alstublieft" rows="1"></textarea>
+                <div style="position: absolute;" ng-show="form.comment.$dirty && form.comment.$invalid">
+                    Vul een tekst in
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12 col-sm-push-12">
+                    <div class="form-group">
+                        <input type="submit" ng-disabled="form.$dirty && form.$invalid" class="btn btn-primary" name="addguestbook" value="Gastenboek tekenen">
+                    </div>
+                </div>
+            </div>
+
+            <input type="hidden" ng-model="guestbook.datetime" value={{guestbook.datetime}}>
+        </form>
+    </div>
+</div>
+
+<div class="footer navbar-fixed-bottom">
+    <div class="container">
+        <p>
+            <span class="glyphicon glyphicon-heart"></span>AMS</p>
+    </div>
+
+</div>

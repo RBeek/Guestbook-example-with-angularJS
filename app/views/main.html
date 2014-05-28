@@ -1,0 +1,53 @@
+<div class="header">
+    <h3 class="text-muted">NokNok</h3>
+</div>
+
+<div class="jumbotron">
+    <h1 ng-click="scrollTo('guestbook')">'Gastenboek!</h1>
+    <p class="lead">
+        <a ng-href="#/new">
+            <img src="images/art-face.png" alt="Ik ben grappig">
+        </a>
+        <br>Klik op mij om het gastenboek te tekenen.
+    </p>
+    <p><a class="btn btn-lg btn-success" ng-href="#/new">Fantastisch!<span class="glyphicon glyphicon-ok"></span></a>
+    </p>
+</div>
+
+<div class="spacer">
+<div class="row marketing">
+    <h4>HTML5 Boilerplate</h4>
+    <p>AngularJS</p>
+    <p>Karma</p>
+</div>
+
+<div class="content-title">
+    <h2 ng-click="scrollTo('guestbook')">Neem een Kijkje in het Gastenboek</h2>
+</div>
+</div>
+
+<div class="row" ng-controller="GuestbookCtrl">
+   <div class="col-sm-12 main-title"><h2 id="guestbook">Gastenboek</h2>
+   <p>30 mei, 2014</p>
+   </div>
+    <div class="col-sm-12" ng-repeat="item in guestbook">
+
+
+        <div class="brdr box-shad col-sm-12 guestbook-entry">
+            <h4 class="media-heading">
+                <a href="#" class="name clr-green" target="_parent">{{item.name}}<small class="datetime">{{item.datetime}}</small></a>
+            </h4>
+            <p class="clr-535353 comment">{{item.comment}}</p>
+            <span class="fnt-smaller fnt-lighter fnt-arial">AMS</span>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="footer">
+    <p>
+        <span class="glyphicon glyphicon-heart"></span>AMS</p>
+</div>

@@ -1,0 +1,172 @@
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.mgtz{ margin-top: 0px !important;}
+/*.ng-pristine{border:1px solid green;}
+.ng-dirty{border:1px solid yellow;}
+.ng-invalid.ng-dirty{border:1px solid red;}
+.ng-valid.ng-dirty{border:1px solid green;}*/
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+
+
+a {
+    color: #03a1d1;
+    text-decoration: none!important;
+}
+/**** LAYOUT ****/
+ .list-inline>li {
+    padding: 0 10px 0 0;
+}
+.container-pad {
+    padding: 30px 15px;
+}
+.box-shad {
+    -webkit-box-shadow: 1px 1px 0 rgba(0, 0, 0, .2);
+    box-shadow: 1px 1px 0 rgba(0, 0, 0, .2);
+}
+.brdr {
+    border: 1px solid #ededed;
+}
+/* Font changes */
+ .fnt-smaller {
+    font-size: .9em;
+}
+.fnt-lighter {
+    color: #bbb;
+}
+/* Color  */
+ .clr-535353 {
+    color: #535353;
+}
+.clr-green, .clr-green:hover {
+    color: green;
+}
+.guestbook-entry {
+    padding: 10px!important;
+    margin-bottom: 20px!important;
+    background-color: #fff!important;
+}
+.guestbook-entry .name {
+    padding-left: 4em;
+    margin-bottom: 1em;
+}
+.guestbook-entry .comment {
+    margin-top: 1em;
+    font-size: 18px;
+}
+.guestbook-entry .datetime {
+    margin-left: 4em;
+}
+
+.spacer{
+  background: rgba(255, 255, 247, 1);
+  border:none;
+  margin-top:-34px;
+  border-radius:none !important;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  padding:19px 19px 0 19px;
+}
+
+.content-title{
+  font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+  color:#1D3883;
+  padding:70px 0 30px;
+  margin-bottom:30px;
+}
+.content-title h2:hover{
+  color:rgba(29, 56, 131, 0.45);
+  }
+
+.main-title{ 
+  text-align:center;
+  margin-bottom:30px;
+  
+}
+.main-title p{ 
+  font-family:Courier;
+  font-size: 1.5em;
+  
+}
+.main-title h2{ 
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  letter-spacing: 0.061em;
+  font-size: 3em;
+}
